@@ -1,6 +1,6 @@
 {
   "name": "chkutils",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "sideEffects": false,
   "type": "module",
   "module": "./dist/chkutils.js",
@@ -16,7 +16,8 @@
     "build-l": "vite build",
     "build-h": "tsc && vite build",
     "preview": "vite preview",
-    "ts-check": "tsc"
+    "ts-check": "tsc",
+    "deploy-to-npm": "vite build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
@@ -30,5 +31,9 @@
     "checkers",
     "utils",
     "helpers"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cossack-don/chkutils.git"
+  }
 }

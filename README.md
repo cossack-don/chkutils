@@ -1,6 +1,6 @@
 # Checks and utils
 
-
+[npm package](https://www.npmjs.com/package/chkutils)
 
 ## License
 
