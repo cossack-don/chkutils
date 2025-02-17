@@ -17,10 +17,14 @@
     "build-h": "tsc && vite build",
     "preview": "vite preview",
     "ts-check": "tsc",
-    "deploy-to-npm": "vite build && npm publish"
+    "deploy-to-npm": "vite build && npm publish",
+    "test-ui": "cypress open",
+    "test-unit-all": "npx cypress run --component"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.4",
+    "cypress": "^14.0.3",
     "typescript": "~5.7.2",
     "vite": "^6.1.0"
   },
@@ -30,7 +34,8 @@
   "keywords": [
     "checkers",
     "utils",
-    "helpers"
+    "helpers",
+    "modules"
   ],
   "repository": {
     "type": "git",
