@@ -1,0 +1,34 @@
+{
+  "name": "chkutils",
+  "version": "1.0.0",
+  "sideEffects": false,
+  "type": "module",
+  "module": "./dist/chkutils.js",
+  "main": "./dist/chkutils.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/chkutils.js",
+      "require": "./dist/chkutils.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build-l": "vite build",
+    "build-h": "tsc && vite build",
+    "preview": "vite preview",
+    "ts-check": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  },
+  "author": "Segey Zhuravlev",
+  "license": "MIT",
+  "description": "package for type checking and various utilities",
+  "keywords": [
+    "checkers",
+    "utils",
+    "helpers"
+  ]
+}
