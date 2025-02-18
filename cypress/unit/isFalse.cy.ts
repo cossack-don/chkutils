@@ -1,4 +1,4 @@
-import { _checks} from '../../src'
+import { _checks} from '@/'
 
 describe('isFalse function', () => {
     const isFalse = _checks.isFalse
