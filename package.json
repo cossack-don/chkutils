@@ -27,7 +27,7 @@
     "preview": "vite preview",
     "generate-types": "tsc --declaration --emitDeclarationOnly --outDir ./dist",
     "generate-md-docs_all-types": "npm run build-to-deploy && npx api-extractor run",
-    "build-to-deploy": "npm run build-l && npm run generate-types",
+    "build-to-deploy": "npm run test-unit-all && npm run build-l && npm run generate-types",
     "deploy-to-npm": "vite build && npm publish",
     "test-ui": "cypress open",
     "test-unit-all": "npx cypress run --component"
