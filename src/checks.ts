@@ -1,3 +1,7 @@
+/**
+ *
+ * @public
+ */
 
 const isPromise= (val: any): val is Promise<any> => isDef(val) && typeof val.then === 'function' && typeof val.catch === 'function'
 const isDef = <T>(v: T): v is NonNullable<T> => v !== undefined && v !== null

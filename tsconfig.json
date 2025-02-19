@@ -1,17 +1,33 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
+    "outDir": "./dist", // Папка, куда будут помещены скомпилированные файлы
+    "rootDir": "./src", // Папка с исходным кодом
+    "declaration": true, // Включает генерацию .d.ts файлов
+    "declarationDir": "./dist/types", // Опционально: папка для .d.ts файлов
     "module": "ESNext",
+    "esModuleInterop": true, // Упрощает работу с CommonJS и ES модулями
+
+    "target": "ES6",
+    "useDefineForClassFields": true,
+//    "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+//    "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    //TODO Параметр "noEmit": true
+    // указывает TypeScript только проверять типы, но не генерировать файлы.
+    //Это полезно в режиме разработки, когда вы используете сборщики (например, Webpack, Vite),
+    //которые сами занимаются генерацией файлов. Однако, если вы хотите, чтобы TypeScript генерировал файлы,
+    //этот параметр нужно удалить или установить в false.
+    "noEmit": false, // "noEmit": true сборщик будет генерить сам типы
+    //TODO Если вы хотите, чтобы TypeScript генерировал только .d.ts файлы (без .js),
+    // вы можете использовать "emitDeclarationOnly": true. Это подходит, если вы хотите генерировать типы, но не хотите,
+    // чтобы TypeScript генерировал JavaScript-файлы.
+    "emitDeclarationOnly": true, // TypeScript будет генерировать только файлы с типами, но не JavaScript.
 
     /* Linting */
     "strict": true,
@@ -24,5 +40,5 @@
 
 
   },
-  "include": ["src", "global.d.ts"]
+  "include": ["src/**/*", "global.d.ts"]
 }

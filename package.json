@@ -5,23 +5,32 @@
   "type": "module",
   "module": "./dist/chkutils.js",
   "main": "./dist/chkutils.umd.cjs",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/chkutils.js",
+      "types": "./dist/types/index.d.ts",
       "require": "./dist/chkutils.umd.cjs"
     }
   },
   "scripts": {
     "dev": "vite",
+    "ts-check": "tsc",
     "build-l": "vite build",
     "build-h": "tsc && vite build",
     "preview": "vite preview",
-    "ts-check": "tsc",
+    "generate-types": "tsc --declaration --emitDeclarationOnly --outDir ./dist",
+    "generate-md-docs_all-types": "npm run build-to-deploy && npx api-extractor run",
+    "build-to-deploy": "npm run build-l && npm run generate-types",
     "deploy-to-npm": "vite build && npm publish",
     "test-ui": "cypress open",
     "test-unit-all": "npx cypress run --component"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.50.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.4",
     "cypress": "^14.0.3",
