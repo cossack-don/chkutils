@@ -13,7 +13,7 @@ const isObject = (obj: any): boolean => obj !== null && typeof obj === 'object'
 const isFunction = (value: any): value is (...args: any[]) => any => typeof value === 'function'
 // const isDate = (val: unknown): val is Date => toTypeString(val) === '[object Date]'
 
-export const _checks = {
+export const _ch = {
     isDef,
     isPromise,
     isTrue,

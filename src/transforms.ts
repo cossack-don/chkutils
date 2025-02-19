@@ -3,6 +3,6 @@
  * @public
  */
 
-export const _transforms = {
+export const _t = {
 
 }
