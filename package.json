@@ -1,19 +1,22 @@
 {
   "name": "chkutils",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "sideEffects": false,
   "type": "module",
-  "module": "./dist/chkutils.js",
-  "main": "./dist/chkutils.umd.cjs",
+  "module": "./dist/chkutils.esm.js",
+  "main": "./dist/chkutils.common.js",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/chkutils.js",
+      "import": {
+        "node": "./dist/chkutils.common.js",
+        "default": "./dist/chkutils.esm.js"
+      },
       "types": "./dist/types/index.d.ts",
-      "require": "./dist/chkutils.umd.cjs"
+      "require": "./dist/chkutils.common.js"
     }
   },
   "scripts": {
