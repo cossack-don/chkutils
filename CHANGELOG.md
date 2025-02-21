@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/cossack-don/chkutils/compare/v1.2.0...v1.2.1) (2025-02-21)
+
+
+### Bug Fixes
+
+* change yaml file build ([3646045](https://github.com/cossack-don/chkutils/commit/36460458a5472539932ad096b44d192620088798))
+
 # [1.2.0](https://github.com/cossack-don/chkutils/compare/v1.1.0...v1.2.0) (2025-02-21)
 
 
