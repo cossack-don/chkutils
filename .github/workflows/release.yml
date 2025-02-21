@@ -25,11 +25,12 @@ jobs:
         run: npm ci
 
       - name: Run Unit Tests
-        run: npm ts-check
+        run: npm run ts-check
 
   unit-all-tests:
     name: Run all unit tests
     runs-on: ubuntu-latest
+    needs: check-ts  # Зависит от успешного завершения check-ts
 
     steps:
       - name: Checkout
@@ -47,11 +48,13 @@ jobs:
         run: npm ci
 
       - name: Run Unit Tests
-        run: npm test-unit-all
+        run: npm run test-unit-all
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    needs: [ check-ts, unit-all-tests ]  # Зависит от успешного завершения check-ts и unit-all-tests
+
     permissions:
       contents: write
       packages: write
