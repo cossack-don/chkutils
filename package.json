@@ -21,17 +21,14 @@
   },
   "scripts": {
     "dev": "vite",
+    "ts-gen-types": "tsc --declaration --emitDeclarationOnly --outDir ./dist",
     "ts-check": "tsc",
-    "build-l": "vite build",
-    "build-h": "tsc && vite build",
-    "preview": "vite preview",
-    "generate-types": "tsc --declaration --emitDeclarationOnly --outDir ./dist",
-    "generate-md-docs_all-types": "npm run build-to-deploy && npx api-extractor run",
-    "build-to-deploy": "npm run test-unit-all && npm run build-l && npm run generate-types",
-    "build": "npm run build-l && npm run generate-types",
-    "deploy-to-npm": "npm publish",
+    "ts-gen-docs": "npm run build-to-deploy && npx api-extractor run",
     "test-ui": "cypress open",
-    "test-unit-all": "npx cypress run --component"
+    "test-unit-all": "npx cypress run --component",
+    "build-local": "vite build",
+    "build-preview": "vite preview",
+    "build": "npm run test-unit-all && npm run build-local && npm run ts-gen-types"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.50.0",

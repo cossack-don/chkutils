@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@libs/*": ["./src/lib/*"]
+    },
+
     "outDir": "./dist", // Папка, куда будут помещены скомпилированные файлы
     "rootDir": "./src", // Папка с исходным кодом
     "declaration": true, // Включает генерацию .d.ts файлов
@@ -38,7 +44,6 @@
 
     //other
 
-
   },
-  "include": ["src/**/*", "global.d.ts"]
+  "include": ["src/**/*", "global.d.ts","vite.config.ts"]
 }

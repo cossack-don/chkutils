@@ -1,7 +1,7 @@
 import {_ch} from './'
 
 const defaultTo = <T, P = {}>(val: T | undefined, payload: P = {text:'Нет данных'} as P): T | P => {
-  if (_ch.isUnDef(val)) return payload;
+  if (_ch.isAllUnDef(val)) return payload;
   return val;
 };
 

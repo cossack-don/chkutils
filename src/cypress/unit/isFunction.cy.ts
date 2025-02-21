@@ -1,4 +1,4 @@
-import { _ch } from '../../src/checks'
+import { _ch } from '@/index'
 
 describe('isFunction function', () => {
   const isFunction = _ch.isFunction;

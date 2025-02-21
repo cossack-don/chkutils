@@ -1,7 +1,7 @@
-import { _ch } from '../../src/checks'
+import { _ch } from '@/index'
 
 describe('isUndef function', () => {
-  const isUndef = _ch.isUndef;
+  const isUndef = _ch.isUnDef;
 
   // Проверяем, что функция возвращает true для undefined
   it('should return true for undefined', () => {

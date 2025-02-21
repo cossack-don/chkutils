@@ -7,9 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-cypress/screenshots
-cypress/video
-/cypress/downloads
+./src/cypress/screenshots
+./src/cypress/video
+./src/cypress/downloads
+
 node_modules
 dist
 dist-ssr

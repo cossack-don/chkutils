@@ -1,4 +1,4 @@
-import { _ch } from '../../src/checks'
+import { _ch } from '@/index'
 
 describe('isObject function', () => {
   const isObject =_ch.isObject;
