@@ -1,6 +1,6 @@
 {
   "name": "chkutils",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "sideEffects": false,
   "type": "module",
   "module": "./dist/chkutils.esm.js",
