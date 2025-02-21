@@ -1,7 +1,7 @@
-import { _checks} from '@/'
+import { _ch } from '../../src/checks'
 
 describe('isTrue function', () => {
-  const isTrue = _checks.isTrue
+  const isTrue = _ch.isTrue
 
   it('should return true if the value is true', () => {
     // Проверяем, что функция возвращает true для значения true

@@ -1,7 +1,7 @@
-import { _checks} from '@/'
+import { _ch } from '../../src/checks'
 
 describe('isArray function', () => {
-  const isArray = _checks.isArray;
+  const isArray = _ch.isArray;
 
   // Проверяем, что функция корректно определяет пустой массив
   it('should return true for an empty array', () => {

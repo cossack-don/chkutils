@@ -1,7 +1,7 @@
-import {_checks} from './'
+import {_ch} from './'
 
-const defaultTo = <T, P = {}>(val: T | undefined, payload: P = {} as P): T | P => {
-  if (_checks.isUndef(val)) return payload;
+const defaultTo = <T, P = {}>(val: T | undefined, payload: P = {text:'Нет данных'} as P): T | P => {
+  if (_ch.isUndef(val)) return payload;
   return val;
 };
 

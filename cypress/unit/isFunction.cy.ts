@@ -1,7 +1,7 @@
-import { _checks} from '@/'
+import { _ch } from '../../src/checks'
 
 describe('isFunction function', () => {
-  const isFunction = _checks.isFunction;
+  const isFunction = _ch.isFunction;
 
   // Проверяем, что функция возвращает true для обычной функции
   it('should return true for a regular function', () => {

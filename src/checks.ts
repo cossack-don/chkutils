@@ -3,15 +3,19 @@
  * @public
  */
 
-const isPromise= (val: any): val is Promise<any> => isDef(val) && typeof val.then === 'function' && typeof val.catch === 'function'
-const isDef = <T>(v: T): v is NonNullable<T> => v !== undefined && v !== null
+// Примитивные структуры данных
 const isTrue = (v: any): boolean => v === true
 const isFalse = (v: any): boolean => v === false
-const isArray = Array.isArray;
-const isUndef = (v: any): v is undefined | null => v === undefined || v === null
-const isObject = (obj: any): boolean => obj !== null && typeof obj === 'object'
+
+// Защита от null, undefined
+const isDef = <T>(v: T): v is NonNullable<T> => v !== undefined && v !== null
+const isUnDef = (v: any): v is undefined | null => v === undefined || v === null
+
+// Сложные структуры данных
 const isFunction = (value: any): value is (...args: any[]) => any => typeof value === 'function'
-// const isDate = (val: unknown): val is Date => toTypeString(val) === '[object Date]'
+const isObject = (obj: any): boolean => obj !== null && typeof obj === 'object'
+const isPromise= (val: any): val is Promise<any> => isDef(val) && typeof val.then === 'function' && typeof val.catch === 'function'
+const isArray = Array.isArray;
 
 export const _ch = {
     isDef,
@@ -19,7 +23,7 @@ export const _ch = {
     isTrue,
     isFalse,
     isArray,
-    isUndef,
+    isUnDef,
     isObject,
     isFunction
 }

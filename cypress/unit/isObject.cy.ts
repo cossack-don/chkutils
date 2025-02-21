@@ -1,7 +1,7 @@
-import { _checks} from '@/'
+import { _ch } from '../../src/checks'
 
 describe('isObject function', () => {
-  const isObject =_checks.isObject;
+  const isObject =_ch.isObject;
 
   // Проверяем, что функция возвращает true для пустого объекта
   it('should return true for an empty object', () => {
