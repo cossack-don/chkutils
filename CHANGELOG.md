@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/cossack-don/chkutils/compare/v1.1.0...v1.2.0) (2025-02-21)
+
+
+### Features
+
+* new build ([e27fc5a](https://github.com/cossack-don/chkutils/commit/e27fc5a8a73d2df6a23af4a99aef231d732f488b))
+* new build ([b6c6a54](https://github.com/cossack-don/chkutils/commit/b6c6a548486416c49af993e220a92a7c67a6ebe4))
+
 # [1.1.0](https://github.com/cossack-don/chkutils/compare/v1.0.11...v1.1.0) (2025-02-21)
 
 
