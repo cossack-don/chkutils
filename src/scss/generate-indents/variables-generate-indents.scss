@@ -1,0 +1,18 @@
+$spacing-properties: (
+        'margin-top': 'mt',
+        'margin-bottom': 'mb',
+        'margin-left': 'ml',
+        'margin-right': 'mr',
+
+        'padding-top': 'pt',
+        'padding-bottom': 'pb',
+        'padding-left': 'pl',
+        'padding-right': 'pr',
+
+        'margin-x': 'mx', // Горизонтальные margin
+        'margin-y': 'my', // Вертикальные margin
+        'margin': 'm-all',
+        'padding-x': 'px', // Горизонтальные padding
+        'padding-y': 'py', // Вертикальные padding
+        'padding': 'p-all',
+);

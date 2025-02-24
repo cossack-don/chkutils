@@ -1,0 +1,39 @@
+@mixin generate-indents-classes($prefix, $properties, $values) {
+  @each $property, $abbreviation in $properties {
+    @each $value in $values {
+
+      // Генерация классов для отдельных свойств (например, mt, mb, pl и т.д.)
+      .#{$prefix}-#{$abbreviation}-#{$value} {
+        #{$property}: #{$value}px;
+      }
+
+      // Генерация классов для осей (mx, my, px, py)
+      @if $abbreviation == 'mx' {
+        .#{$prefix}-mx-#{$value} {
+          margin-left: #{$value}px;
+          margin-right: #{$value}px;
+        }
+      }
+      @if $abbreviation == 'my' {
+        .#{$prefix}-my-#{$value} {
+          margin-top: #{$value}px;
+          margin-bottom: #{$value}px;
+        }
+      }
+      @if $abbreviation == 'px' {
+        .#{$prefix}-px-#{$value} {
+          padding-left: #{$value}px;
+          padding-right: #{$value}px;
+        }
+      }
+      @if $abbreviation == 'py' {
+        .#{$prefix}-py-#{$value} {
+          padding-top: #{$value}px;
+          padding-bottom: #{$value}px;
+        }
+      }
+    }
+  }
+}
+
+

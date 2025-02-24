@@ -1,0 +1,23 @@
+@mixin short-text-nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin short-text-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin mixin-short-text($prefix, $wrap) {
+      @if $wrap == 'wrap' {
+        .#{$prefix}-#{$wrap} {
+          @include short-text-wrap;
+        }
+      }
+      @if $wrap == 'nowrap' {
+        .#{$prefix}-#{$wrap} {
+          @include short-text-nowrap;
+        }
+      }
+}
