@@ -7,9 +7,7 @@
   "main": "./dist/chkutils.common.js",
   "types": "./dist/types/index.d.ts",
   "files": [
-    "dist/*.js",
-    "dist/types/*.d.ts",
-    "dist/utils-scss/*.scss"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -28,7 +26,7 @@
     "ts-gen-docs": "npm run build-to-deploy && npx api-extractor run",
     "test-ui": "cypress open",
     "test-run-units": "npx cypress run --component",
-    "build": "vite build",
+    "build": "vite build && npm run ts-gen-types",
     "build-preview": "vite preview",
     "build-all-steps": "npm run test-run-units && npm run build && npm run ts-gen-types"
   },
