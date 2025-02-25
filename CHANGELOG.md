@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/cossack-don/chkutils/compare/v1.3.0...v1.3.1) (2025-02-25)
+
+
+### Bug Fixes
+
+* change build ([1e3614f](https://github.com/cossack-don/chkutils/commit/1e3614f0e35a5f0fcf0cc30ed637c959d8ed5b0a))
+* change build ([1357c43](https://github.com/cossack-don/chkutils/commit/1357c43bab61a189009c0a461d49b68e031990ec))
+
 # [1.3.0](https://github.com/cossack-don/chkutils/compare/v1.2.1...v1.3.0) (2025-02-25)
 
 
