@@ -7,7 +7,9 @@
   "main": "./dist/chkutils.common.js",
   "types": "./dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/types/*.d.ts",
+    "dist/utils-scss/*.scss"
   ],
   "exports": {
     ".": {
