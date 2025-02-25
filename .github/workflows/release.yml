@@ -27,7 +27,7 @@ jobs:
       - name: Run Unit Tests
         run: npm run ts-check
 
-  unit-all-tests:
+  tests-run-units:
     name: Run all units tests
     runs-on: ubuntu-latest
     needs: check-ts  # Зависит от успешного завершения check-ts
@@ -53,7 +53,7 @@ jobs:
   build:
     name: Build, Release, Publish NPM
     runs-on: ubuntu-latest
-    needs: [ check-ts, unit-all-tests ]  # Зависит от успешного завершения check-ts и unit-all-tests
+    needs: [ check-ts, tests-run-units ]  # Зависит от успешного завершения check-ts и unit-all-tests
 
     permissions:
       contents: write
