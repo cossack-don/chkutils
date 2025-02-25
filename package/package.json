@@ -26,7 +26,6 @@
     "ts-gen-docs": "npm run build-to-deploy && npx api-extractor run",
     "test-ui": "cypress open",
     "test-run-units": "npx cypress run --component",
-    "test-local-publish-pkg": "npm run build && npm pack\ntar -ztvf your-package-1.0.0.tgz",
     "build": "vite build && npm run ts-gen-types",
     "build-preview": "vite preview",
     "build-all-steps": "npm run test-run-units && npm run build && npm run ts-gen-types"
