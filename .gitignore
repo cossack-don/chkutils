@@ -10,7 +10,7 @@ lerna-debug.log*
 ./src/cypress/screenshots
 ./src/cypress/video
 ./src/cypress/downloads
-
+package
 node_modules
 dist
 dist-ssr
