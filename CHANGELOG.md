@@ -1,3 +1,23 @@
+# [1.3.0](https://github.com/cossack-don/chkutils/compare/v1.2.1...v1.3.0) (2025-02-25)
+
+
+### Bug Fixes
+
+* change dirs scss ([4df841c](https://github.com/cossack-don/chkutils/commit/4df841c4d3e450b9866a836fc967742265c949c3))
+
+
+### Features
+
+* add 2 mixin scss helper ([257a4a3](https://github.com/cossack-don/chkutils/commit/257a4a3baf2da86078761f6b084f2d911a612006))
+* add mixin scss flex-boxes ([a43d57b](https://github.com/cossack-don/chkutils/commit/a43d57b27388e6d8f03d44e2b30e3eb1537a98e2))
+* add scss utils, change build ([07fd4ab](https://github.com/cossack-don/chkutils/commit/07fd4ab9cedea44248c3ff7453fd0c6c0ad62142))
+* add scss utils, change yaml build ([ffbd25d](https://github.com/cossack-don/chkutils/commit/ffbd25dcc1b99229e55582aa5c9cdb771917cafb))
+* change yaml ([bf0c6eb](https://github.com/cossack-don/chkutils/commit/bf0c6ebd3fc3643419324077f536a81ad1f7a4cb))
+* change yaml ([7966204](https://github.com/cossack-don/chkutils/commit/796620426b1d0e9a5ff5f1d7739888d01b5a1c6e))
+* create branch dev ([f0f3739](https://github.com/cossack-don/chkutils/commit/f0f3739c441390fc72730dc5c4c17a0cb03b8bbc))
+* test up version ([2058477](https://github.com/cossack-don/chkutils/commit/20584776ecf381c4bbb5525faf3c28fda7d3072a))
+* test up version ([71c909a](https://github.com/cossack-don/chkutils/commit/71c909a073223f076632201e45ef8b65559c398d))
+
 ## [1.2.1](https://github.com/cossack-don/chkutils/compare/v1.2.0...v1.2.1) (2025-02-21)
 
 
