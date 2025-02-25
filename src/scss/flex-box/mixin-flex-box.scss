@@ -1,0 +1,142 @@
+@mixin mixin-flex-box-classes($prefix) {
+
+  .#{$prefix}-flex-display {
+    display: flex;
+  }
+
+  .#{$prefix}-flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .#{$prefix}-flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .#{$prefix}-flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .#{$prefix}-flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .#{$prefix}-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .#{$prefix}-flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .#{$prefix}-flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .#{$prefix}-flex-justify-start {
+    justify-content: flex-start;
+  }
+
+  .#{$prefix}-flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  .#{$prefix}-flex-justify-center {
+    justify-content: center;
+  }
+
+  .#{$prefix}-flex-justify-between {
+    justify-content: space-between;
+  }
+
+  .#{$prefix}-flex-justify-around {
+    justify-content: space-around;
+  }
+
+  .#{$prefix}-flex-justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .#{$prefix}-flex-align-start {
+    align-items: flex-start;
+  }
+
+  .#{$prefix}-flex-align-end {
+    align-items: flex-end;
+  }
+
+  .#{$prefix}-flex-align-center {
+    align-items: center;
+  }
+
+  .#{$prefix}-flex-align-baseline {
+    align-items: baseline;
+  }
+
+  .#{$prefix}-flex-align-stretch {
+    align-items: stretch;
+  }
+
+  .#{$prefix}-flex-align-content-start {
+    align-content: flex-start;
+  }
+
+  .#{$prefix}-flex-align-content-end {
+    align-content: flex-end;
+  }
+
+  .#{$prefix}-flex-align-content-center {
+    align-content: center;
+  }
+
+  .#{$prefix}-flex-align-content-between {
+    align-content: space-between;
+  }
+
+  .#{$prefix}-flex-align-content-around {
+    align-content: space-around;
+  }
+
+  .#{$prefix}-flex-align-content-stretch {
+    align-content: stretch;
+  }
+
+  .#{$prefix}-flex-self-start {
+    align-self: flex-start;
+  }
+
+  .#{$prefix}-flex-self-end {
+    align-self: flex-end;
+  }
+
+  .#{$prefix}-flex-self-center {
+    align-self: center;
+  }
+
+  .#{$prefix}-flex-self-baseline {
+    align-self: baseline;
+  }
+
+  .#{$prefix}-flex-self-stretch {
+    align-self: stretch;
+  }
+
+  .#{$prefix}-flex-grow-0 {
+    flex-grow: 0;
+  }
+
+  .#{$prefix}-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+  .#{$prefix}-flex-shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .#{$prefix}-flex-shrink-1 {
+    flex-shrink: 1;
+  }
+}

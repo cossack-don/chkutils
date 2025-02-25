@@ -1,4 +1,4 @@
-@mixin generate-indents-classes($prefix, $properties, $values) {
+@mixin mixin-generate-indents-classes($prefix, $properties, $values) {
   @each $property, $abbreviation in $properties {
     @each $value in $values {
 
