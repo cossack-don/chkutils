@@ -27,10 +27,10 @@
     "ts-check": "tsc",
     "ts-gen-docs": "npm run build-to-deploy && npx api-extractor run",
     "test-ui": "cypress open",
-    "test-unit-all": "npx cypress run --component",
-    "build-local": "vite build",
+    "test-run-units": "npx cypress run --component",
+    "build": "vite build",
     "build-preview": "vite preview",
-    "build": "npm run test-unit-all && npm run build-local && npm run ts-gen-types"
+    "build-all-steps": "npm run test-run-units && npm run build && npm run ts-gen-types"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.50.0",
