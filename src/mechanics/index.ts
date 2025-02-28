@@ -1,9 +1,8 @@
 import { debounce } from "./debounce";
+import { polling } from "./polling";
 
-const _m = {
-  debounce
+export const _m = {
+  debounce,
+  polling
 }
 
-export {
-  _m
-}
