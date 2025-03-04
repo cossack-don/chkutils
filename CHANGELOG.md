@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/cossack-don/chkutils/compare/v1.3.1...v1.4.0) (2025-03-04)
+
+
+### Bug Fixes
+
+* change types ([0424117](https://github.com/cossack-don/chkutils/commit/0424117d027e44f028f4ca056317a2e66e82f640))
+
+
+### Features
+
+* add new fn, tests, checks, adapters ([1a6d16c](https://github.com/cossack-don/chkutils/commit/1a6d16cb72d850630ea44de85a660b33347e9fa7))
+* add test debounce ([9117ef8](https://github.com/cossack-don/chkutils/commit/9117ef8005ef3c633bd38930afddcbd4af455d40))
+* add test unit polling ([668c3f0](https://github.com/cossack-don/chkutils/commit/668c3f06f817af4c5463f390c877bb69f95fc4de))
+* new fn, tests ([1c47ea5](https://github.com/cossack-don/chkutils/commit/1c47ea58589a835c9c8ba3584f859fb8b2333edf))
+
 ## [1.3.1](https://github.com/cossack-don/chkutils/compare/v1.3.0...v1.3.1) (2025-02-25)
 
 
