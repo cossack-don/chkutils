@@ -7,6 +7,13 @@ import { isUnDef } from "./isUnDef";
 import { isObject } from "./isObject";
 import { isAllUnDef } from "./isAllUnDef";
 import { isArray } from "./isArray";
+import { isDate } from "./isDate";
+import { isMap } from "./isMap";
+import { isSet } from "./isSet";
+import { isSymbol } from "./isSymbol";
+import { isNull } from "./isNull";
+import { isEmptyArray } from "./isEmptyArray";
+import { isEmptyObject } from "./isEmptyObject";
 
 export const _ch = {
   isDef,
@@ -17,5 +24,12 @@ export const _ch = {
   isArray,
   isUnDef,
   isObject,
-  isFunction
+  isFunction,
+  isDate,
+  isMap,
+  isSet,
+  isSymbol,
+  isNull,
+  isEmptyArray,
+  isEmptyObject
 }
