@@ -1,7 +1,7 @@
-import { _a } from "@/index";
+import { _p } from "@/index";
 
 // Функция, которую мы тестируем
-const toSnakeCasePrimitive = _a.toSnakeCasePrimitive;
+const toSnakeCasePrimitive = _p.toSnakeCasePrimitive;
 
 describe('toSnakeCasePrimitive function', () => {
   it('должна возвращать пустую строку для пустой строки', () => {
