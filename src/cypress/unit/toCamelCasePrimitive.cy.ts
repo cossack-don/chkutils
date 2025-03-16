@@ -1,7 +1,7 @@
-import { _a } from "@/index";
+import { _p } from "@/index";
 
 // Функция, которую мы тестируем
-const toCamelCasePrimitive = _a.toCamelCasePrimitive;
+const toCamelCasePrimitive = _p.toCamelCasePrimitive;
 
 describe('toCamelCasePrimitive function', () => {
   it('должна возвращать пустую строку для пустой строки', () => {

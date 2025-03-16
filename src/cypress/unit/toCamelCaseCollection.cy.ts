@@ -1,5 +1,5 @@
-import { _a } from "@/index";
-import { Options } from "@/adapters/utilsCase";
+import { _p } from "@/index";
+import { Options } from "@/patterns/adapters/utilsCase";
 
 const DefaultOption: Options = {
   recursive: true,
@@ -8,7 +8,7 @@ const DefaultOption: Options = {
 };
 
 // Функция, которую мы тестируем
-const toCamelCaseCollection = _a.toCamelCaseCollection;
+const toCamelCaseCollection = _p.toCamelCaseCollection;
 
 describe('toCamelCaseCollection function', () => {
   it('должна преобразовывать ключи объекта в camelCase', () => {
