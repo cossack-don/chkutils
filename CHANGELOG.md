@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/cossack-don/chkutils/compare/v1.4.0...v1.4.1) (2025-03-16)
+
+
+### Bug Fixes
+
+* update arch pkg, change fn un-def-default-fieald ([804421c](https://github.com/cossack-don/chkutils/commit/804421c5618462d7db061bd3a6186374ca6562af))
+
 # [1.4.0](https://github.com/cossack-don/chkutils/compare/v1.3.1...v1.4.0) (2025-03-04)
 
 
