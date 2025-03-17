@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/cossack-don/chkutils/compare/v1.4.1...v1.5.0) (2025-03-17)
+
+
+### Features
+
+* add vitepress docs draft ([ad9e7d4](https://github.com/cossack-don/chkutils/commit/ad9e7d468facd3edf0109108e3131942c4059805))
+
 ## [1.4.1](https://github.com/cossack-don/chkutils/compare/v1.4.0...v1.4.1) (2025-03-16)
 
 
