@@ -5,19 +5,63 @@
 ```ts
 
 // @public (undocumented)
-export const _checks: {
+export const _c: {};
+
+// @public (undocumented)
+export const _ch: {
     isDef: <T>(v: T) => v is NonNullable<T>;
+    isAllUnDef: (v: any) => v is undefined | null | typeof NaN;
     isPromise: (val: any) => val is Promise<any>;
     isTrue: (v: any) => boolean;
     isFalse: (v: any) => boolean;
     isArray: (arg: any) => arg is any[];
-    isUndefined: (v: any) => v is undefined | null;
+    isUnDef: (v: any) => v is undefined | null;
     isObject: (obj: any) => boolean;
     isFunction: (value: any) => value is (...args: any[]) => any;
+    isDate: (val: unknown) => val is Date;
+    isMap: (val: unknown) => val is Map<any, any>;
+    isSet: (val: unknown) => val is Set<any>;
+    isSymbol: (val: unknown) => val is symbol;
+    isNull: (value: any) => boolean;
+    isEmptyArray: (arr: unknown) => boolean;
+    isEmptyObject: (obj: unknown) => boolean;
 };
 
 // @public (undocumented)
-export const _transforms: {};
+export const _h: {
+    unDefWithDefaultField: <T, P = {
+        text: string;
+    }>(val: T | undefined | null, payload?: P) => T | P;
+    cloneDeep: <T>(value: T, cache?: WeakMap<object, any>) => T;
+    toTypeString: (value: unknown) => string;
+};
+
+// @public (undocumented)
+export const _m: {
+    debounce: <T extends (...args: any[]) => any>(func: T, wait: number, immediate?: boolean) => ((...args: Parameters<T>) => void);
+    polling: <T extends (...args: any[]) => any>(func: T, interval: number) => {
+        start: () => void;
+        stop: () => void;
+    };
+};
+
+// @public (undocumented)
+export const _p: {
+    toSnakeCaseCollection: typeof toSnakeCaseCollection;
+    toSnakeCasePrimitive: typeof toSnakeCasePrimitive;
+    toCamelCasePrimitive: typeof toCamelCasePrimitive;
+    toCamelCaseCollection: typeof toCamelCaseCollection;
+};
+
+// @public (undocumented)
+export const _t: {};
+
+// Warnings were encountered during analysis:
+//
+// dist/types/patterns/index.d.ts:3:5 - (ae-forgotten-export) The symbol "toSnakeCaseCollection" needs to be exported by the entry point index.d.ts
+// dist/types/patterns/index.d.ts:4:5 - (ae-forgotten-export) The symbol "toSnakeCasePrimitive" needs to be exported by the entry point index.d.ts
+// dist/types/patterns/index.d.ts:5:5 - (ae-forgotten-export) The symbol "toCamelCasePrimitive" needs to be exported by the entry point index.d.ts
+// dist/types/patterns/index.d.ts:6:5 - (ae-forgotten-export) The symbol "toCamelCaseCollection" needs to be exported by the entry point index.d.ts
 
 // (No @packageDocumentation comment for this package)
 
