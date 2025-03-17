@@ -10,6 +10,10 @@ lerna-debug.log*
 ./src/cypress/screenshots
 ./src/cypress/video
 ./src/cypress/downloads
+
+/doc/.vitepress/cache
+/doc/.vitepress/dist
+
 package
 node_modules
 dist
