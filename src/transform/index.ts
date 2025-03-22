@@ -1,3 +1,5 @@
-export const _t = {
+import { cloneDeep } from "./cloneDeep";
 
+export const _t = {
+  cloneDeep
 }

@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Start docs
-      link: /src/checks/isTrue
+      link: /src/quick-start
     - theme: alt
       text: npm package chkutils
       link: https://www.npmjs.com/package/chkutils

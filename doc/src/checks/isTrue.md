@@ -1,7 +1,13 @@
 # Method isTrue
 
-description-1
+Возвращает `true`, если значение строго равно `true`, иначе `false`
 
-```ts
-// example
-```
+  ```ts
+  isTrue(true) // => true
+
+  isTrue(false) // => false
+  isTrue(NaN) // => false
+  
+  const maps = new Map()
+  isTrue(maps) // => false
+  ```

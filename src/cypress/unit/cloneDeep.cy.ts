@@ -1,7 +1,7 @@
-import { _h } from "@/index";
+import { _t } from "@/index";
 
 // Функция, которую мы тестируем
-const cloneDeep = _h.cloneDeep;
+const cloneDeep = _t.cloneDeep;
 
 
 describe('cloneDeep function', () => {
