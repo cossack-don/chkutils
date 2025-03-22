@@ -1,8 +1,13 @@
 # Mixin Flex Box
 
-description-1
+Описание -
 
+  ```scss
+@use 'mixin-flex-box' as *;
 
-```ts
-// example
-```
+// Подключение
+@include mixin-flex-box-classes('prefix')
+
+// Использование
+
+  ```
