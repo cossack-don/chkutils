@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/cossack-don/chkutils/compare/v1.5.0...v1.5.1) (2025-03-30)
+
+
+### Bug Fixes
+
+* add docs, fixed methods ([b70c317](https://github.com/cossack-don/chkutils/commit/b70c3171eccf3a818cfa617955393d66fac8a0a7))
+
 # [1.5.0](https://github.com/cossack-don/chkutils/compare/v1.4.1...v1.5.0) (2025-03-17)
 
 
