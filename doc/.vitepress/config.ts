@@ -24,12 +24,25 @@ export default defineConfig({
         items: [
           { text: 'isTrue', link: '/src/checks/isTrue' },
           { text: 'isFalse', link: '/src/checks/isFalse' },
-          { text: 'isArray', link: '/src/checks/isArray' },
+          { text: 'isNull', link: '/src/checks/isNull' },
           { text: 'isDef', link: '/src/checks/isDef' },
+          { text: 'isUnDef', link: '/src/checks/isUnDef' },
+          { text: 'isObject', link: '/src/checks/isObject' },
+          { text: 'isArray', link: '/src/checks/isArray' },
           { text: 'isEmptyArray', link: '/src/checks/isEmptyArray' },
           { text: 'isEmptyObject', link: '/src/checks/isEmptyObject' },
+          { text: 'isMap', link: '/src/checks/isMap' },
+          { text: 'isSet', link: '/src/checks/isSet' },
+          { text: 'isDate', link: '/src/checks/isDate' },
+          { text: 'isFunction', link: '/src/checks/isFunction' },
+          { text: 'isSymbol', link: '/src/checks/isSymbol' },
           { text: 'isPromise', link: '/src/checks/isPromise' },
-          { text: 'isUnDef', link: '/src/checks/isUnDef' },
+        ]
+      },
+      {
+        text: 'Helpers',
+        items: [
+          { text: 'returnDefaultField', link: '/src/helpers/returnDefaultField' },
         ]
       },
       {
