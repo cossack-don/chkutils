@@ -1,0 +1,6 @@
+# Method Debounce
+
+
+  ```ts
+
+  ```
