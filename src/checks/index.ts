@@ -5,7 +5,6 @@ import { isPromise } from "./isPromise";
 import { isDef } from "./isDef";
 import { isUnDef } from "./isUnDef";
 import { isObject } from "./isObject";
-import { isAllUnDef } from "./isAllUnDef";
 import { isArray } from "./isArray";
 import { isDate } from "./isDate";
 import { isMap } from "./isMap";
@@ -17,7 +16,6 @@ import { isEmptyObject } from "./isEmptyObject";
 
 export const _ch = {
   isDef,
-  isAllUnDef,
   isPromise,
   isTrue,
   isFalse,
